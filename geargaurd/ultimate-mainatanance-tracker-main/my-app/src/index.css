@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Auth Pages Styling */
+.auth-wrapper {
+  width: 100%;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #012b36, #004e5a);
+  color: white;
+  position: relative;
+  /* For absolute positioning of children if needed */
+}
+
+/* Back Button */
+.back-btn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #00d0df;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  color: #fff;
+  transform: translateX(-5px);
+}
+
+.auth-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-card h2 {
+  margin-bottom: 10px;
+  color: #00d0df;
+}
+
+.auth-subtitle {
+  margin-bottom: 30px;
+  color: #ccc;
+  font-size: 0.9em;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+  color: #fff;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 2px #00d0df;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #00d0df;
+  color: #012b36;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.auth-btn:hover {
+  background: #00e6ff;
+  transform: translateY(-2px);
+}
+
+.auth-footer {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+.auth-footer a {
+  color: #00d0df;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Home Page Auth Buttons */
+.home-container {
+  position: relative;
+  height: 100%;
+  color: white;
+}
+
+.auth-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.login-btn {
+  color: #00d0df;
+  border: 2px solid #00d0df;
+}
+
+.login-btn:hover {
+  background: rgba(0, 208, 223, 0.1);
+}
+
+.signup-btn {
+  background: #00d0df;
+  color: #012b36;
+}
+
+.signup-btn:hover {
+  background: #00e6ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 208, 223, 0.4);
+}
